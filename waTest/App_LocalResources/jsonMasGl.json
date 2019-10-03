@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Juan",
+    "contractTypeName": "HourlySalaryEmployee",
+    "roleId": 1,
+    "roleName": "Administrator",
+    "roleDescription": null,
+    "hourlySalary": 60000,
+    "monthlySalary": 80000
+  },
+  {
+    "id": 2,
+    "name": "Sebastian",
+    "contractTypeName": "MonthlySalaryEmployee",
+    "roleId": 2,
+    "roleName": "Contractor",
+    "roleDescription": null,
+    "hourlySalary": 60000,
+    "monthlySalary": 80000
+  }
+]

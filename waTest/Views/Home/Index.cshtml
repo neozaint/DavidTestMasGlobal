@@ -1,0 +1,90 @@
+﻿@{
+    ViewBag.Title = "Employees Page";
+}
+@model DTO.EmployeDTO
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>My Employees</h2>
+        @using (Html.BeginForm("GetEmployees", "Home", FormMethod.Get, new { name = "select", enctype = "multipart/form-data", @id = "select", @class = "form-inline", @autocomplete = "off" }))
+        {
+            <div>Find By ID:</div>
+            @Html.TextBoxFor(m => m.Id, new { @class = "validateOnlyNumbers", @maxlength = "20" })
+            <input id="btnGetEm" type="submit" value="Get employees" />
+        }
+        @if (ViewBag.Employees != null)
+        {
+            if (ViewBag.Employees.Count > 0)
+            {
+                <table id="tblEmployees" class="table" data-paging="true" data-paging-size="10">
+                    <thead>
+                        <tr>
+                            <th width="65px" class="text-center">Id</th>
+                            <th width="65px" class="text-center">Name</th>
+                            <th width="65px" class="text-center" data-breakpoints="xs">Contract Type Name</th>
+                            <th width="65px" class="text-center" data-breakpoints="xs">Role Id</th>
+                            <th width="65px" class="text-center" data-breakpoints="xs">Role Name</th>
+                            <th width="65px" class="text-center" data-breakpoints="xs">Role Description</th>
+                            <th width="65px" class="text-center" data-breakpoints="xs">Hourly Salary</th>
+                            <th width="65px" class="text-center" data-breakpoints="xs">Monthly Salary</th>
+                            <th width="65px" class="text-center" data-breakpoints="xs">Anual Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (DTO.EmployeDTO item in ViewBag.Employees)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.Name</td>
+                                <td>@item.ContractTypeName</td>
+                                <td>@item.RoleId</td>
+                                <td>@item.RoleName</td>
+                                <td>@item.RoleDescription</td>
+                                <td>@item.HourlySalary</td>
+                                <td>@item.MonthlySalary</td>
+                                <td>@item.AnualSalary</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <div>No results found</div>
+            }
+        }
+
+    </div>
+</div>
+@section Scripts{
+    @Scripts.Render("~/bundles/footable")
+}
+
+<script>
+    //Apply responsive styles for tblEmployees
+    $(document).ready(function () {
+        
+        $('#tblEmployees').footable();
+
+        $('#change-page-size').change(function (e) {
+            e.preventDefault();
+            var pageSize = $(this).val();
+            $('.footable').data('page-size', pageSize);
+            $('.footable').trigger('footable_initialized');
+        });
+    });
+
+    //It allows only numeric inputs.
+    $(".validateOnlyNumbers").on("keypress keyup blur", function (event) {
+        var e = window.event || event;
+        var key = e.keyCode || e.which;
+
+        var exclusions = [8, 9, 37, 39, 13, 16, 38, 40]; /*Add exceptions here */
+        if (e.ctrlKey) { return; }
+        if (exclusions.indexOf(key) > -1) { return; }
+
+        if ((key < 48 || key > 57)) {
+            e.preventDefault();
+        }
+    });
+</script>

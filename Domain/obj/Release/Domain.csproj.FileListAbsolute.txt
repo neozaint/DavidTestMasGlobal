@@ -1,0 +1,11 @@
+C:\Users\852038\source\repos\waTest\Domain\bin\Release\Domain.dll
+C:\Users\852038\source\repos\waTest\Domain\bin\Release\Domain.pdb
+C:\Users\852038\source\repos\waTest\Domain\bin\Release\DTO.dll
+C:\Users\852038\source\repos\waTest\Domain\bin\Release\Newtonsoft.Json.dll
+C:\Users\852038\source\repos\waTest\Domain\bin\Release\DTO.pdb
+C:\Users\852038\source\repos\waTest\Domain\bin\Release\Newtonsoft.Json.xml
+C:\Users\852038\source\repos\waTest\Domain\obj\Release\Domain.csprojAssemblyReference.cache
+C:\Users\852038\source\repos\waTest\Domain\obj\Release\Domain.csproj.CoreCompileInputs.cache
+C:\Users\852038\source\repos\waTest\Domain\obj\Release\Domain.csproj.CopyComplete
+C:\Users\852038\source\repos\waTest\Domain\obj\Release\Domain.dll
+C:\Users\852038\source\repos\waTest\Domain\obj\Release\Domain.pdb

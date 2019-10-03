@@ -1,0 +1,17 @@
+C:\Users\852038\source\repos\waTest\Infrastructure\bin\Debug\Infrastructure.dll
+C:\Users\852038\source\repos\waTest\Infrastructure\bin\Debug\Infrastructure.pdb
+C:\Users\852038\source\repos\waTest\Infrastructure\bin\Debug\Newtonsoft.Json.dll
+C:\Users\852038\source\repos\waTest\Infrastructure\bin\Debug\Newtonsoft.Json.xml
+C:\Users\852038\source\repos\waTest\Infrastructure\obj\Debug\Infrastructure.csprojAssemblyReference.cache
+C:\Users\852038\source\repos\waTest\Infrastructure\obj\Debug\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\852038\source\repos\waTest\Infrastructure\obj\Debug\Infrastructure.csproj.CopyComplete
+C:\Users\852038\source\repos\waTest\Infrastructure\obj\Debug\Infrastructure.dll
+C:\Users\852038\source\repos\waTest\Infrastructure\obj\Debug\Infrastructure.pdb
+C:\Users\858277\Desktop\waTest\Infrastructure\bin\Debug\Infrastructure.dll
+C:\Users\858277\Desktop\waTest\Infrastructure\bin\Debug\Infrastructure.pdb
+C:\Users\858277\Desktop\waTest\Infrastructure\bin\Debug\Newtonsoft.Json.dll
+C:\Users\858277\Desktop\waTest\Infrastructure\bin\Debug\Newtonsoft.Json.xml
+C:\Users\858277\Desktop\waTest\Infrastructure\obj\Debug\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\858277\Desktop\waTest\Infrastructure\obj\Debug\Infrastructure.csproj.CopyComplete
+C:\Users\858277\Desktop\waTest\Infrastructure\obj\Debug\Infrastructure.dll
+C:\Users\858277\Desktop\waTest\Infrastructure\obj\Debug\Infrastructure.pdb
